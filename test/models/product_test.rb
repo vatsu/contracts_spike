@@ -8,7 +8,7 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "validates name, in segment scope, uniquess" do
-    product = products(:one).dup
+    product = products(:product_one).dup
     product.valid?
     assert product.errors.added?(:name, :taken)
   end

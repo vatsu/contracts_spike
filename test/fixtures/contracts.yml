@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: product_one
+  client: client_one
+
+two:
+  product: prodcut_two
+  client: client_two

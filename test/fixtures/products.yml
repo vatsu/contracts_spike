@@ -1,10 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+product_one:
   name: MyString
   segment: <%= Product.segments[:company] %>
   required_document: required_documet_one
 
-two:
+prodcut_two:
   name: MyString1
   segment: <%= Product.segments[:person] %>
