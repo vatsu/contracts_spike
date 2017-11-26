@@ -6,6 +6,9 @@ class Client < ApplicationRecord
   belongs_to :company, optional: true
   belongs_to :person, optional: true
 
+  accepts_nested_attributes_for :company
+  accepts_nested_attributes_for :person
+
   def name
     self.send(segment.to_sym).name
   end
