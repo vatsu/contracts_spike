@@ -6,7 +6,7 @@ Há apenas os models conforme descritos no diagram [ER](./erd.pdf) e nos [testes
 e um [serviço de exemplo](app/services/signing_service.rb) que mostra como
 recuperar dados para o processo de assinatura.
 
-Para simplificação, uploads de arquivo são tratados pelo CarrerWave com storage em disco.
+Para simplificação, uploads de arquivo são tratados pelo CarrierWave com storage em disco.
 
 Além disso, pode-se fazer melhorias com helpers para o testes e talvez alguma refatoração nos models.
 
