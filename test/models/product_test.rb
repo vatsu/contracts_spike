@@ -11,5 +11,11 @@ class ProductTest < ActiveSupport::TestCase
     product = products(:one).dup
     product.valid?
     assert product.errors.added?(:name, :taken)
- end
+  end
+
+  test "required_document is optional" do
+    product = Product.new
+    product.valid?
+    assert_not product.errors.added?(:required_document, :blank)
+  end
 end

@@ -10,14 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171126162058) do
+ActiveRecord::Schema.define(version: 20171126170312) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.integer "segment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "required_document_id"
     t.index ["name", "segment"], name: "index_products_on_name_and_segment", unique: true
+    t.index ["required_document_id"], name: "index_products_on_required_document_id"
+  end
+
+  create_table "required_documents", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+required_documet_one:
+  description: MyString
+
+required_document_two:
+  description: MyString

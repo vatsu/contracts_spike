@@ -2,8 +2,9 @@
 
 one:
   name: MyString
-  segment: 1
+  segment: <%= Product.segments[:company] %>
+  required_document: required_documet_one
 
 two:
   name: MyString1
-  segment: 2
+  segment: <%= Product.segments[:person] %>

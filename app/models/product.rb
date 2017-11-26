@@ -3,4 +3,6 @@ class Product < ApplicationRecord
   validates :segment, presence: true
 
   enum segment: [:company, :person]
+
+  belongs_to :required_document, optional: true
 end
