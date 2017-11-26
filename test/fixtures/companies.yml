@@ -1,10 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+company_one:
   name: MyString
   tax_id: MyString
   people: person_one
 
-two:
+company_two:
   name: MyString
   tax_id: MyString
+  people: person_one person_two
